@@ -39,6 +39,7 @@ xcuserdata/
 *.xccheckout
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+.build/
 build/
 DerivedData/
 *.moved-aside
@@ -61,6 +62,7 @@ DerivedData/
 ### Projects ###
 *.xcodeproj
 *.xcworkspace
+*.resolved
 
 ### Tuist derived files ###
 graph.dot

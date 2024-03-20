@@ -6,6 +6,6 @@ let config = Config(
     ]),
     swiftVersion: .init(5, 0, 0),
     plugins: [
-        .local(path: .relativeToRoot("Tuist/Plugins/EnvironmentPlugin"))
+        .local(path: .relativeToRoot("Plugins/EnvironmentPlugin"))
     ]
 )
