@@ -9,6 +9,7 @@ let project = Project(
             destinations: .iOS,
             product: .app,
             bundleId: "junsung.Laboratory",
+            deploymentTargets: .iOS("15.0")
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchStoryboardName": "LaunchScreen.storyboard",
