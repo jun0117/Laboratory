@@ -1,15 +1,10 @@
 // swift-tools-version:5.0
-//
-//  Package.swift
-//  Config
-//
-//  Created by Sam on 3/20/24.
-//
 
 import PackageDescription
 
 #if TUIST
 import struct ProjectDescription.PackageSettings
+import ConfigurationPlugin
 
 let packageSettings = PackageSettings(
     productTypes: [
@@ -27,6 +22,7 @@ let packageSettings = PackageSettings(
         "FlexLayout": .framework,
         "PinLayout": .framework
     ],
+    baseSettings: .settings(configurations: .default),
     platforms: [.iOS]
 )
 
