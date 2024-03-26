@@ -23,6 +23,11 @@ public extension Target {
             .toTarget(with: module.targetName(type: .unitTest), product: .unitTests)
     }
     
+    static func testing(module: ModulePaths, dependencies: [TargetDependency] = []) -> Target {
+        TargetSpec(sources: .testing, dependencies: dependencies)
+            .toTarget(with: module.targetName(type: .testing), product: .framework)
+    }
+    
     static func demo(module: ModulePaths, dependencies: [TargetDependency] = []) -> Target {
         TargetSpec(
             infoPlist: .extendingDefault(with: [

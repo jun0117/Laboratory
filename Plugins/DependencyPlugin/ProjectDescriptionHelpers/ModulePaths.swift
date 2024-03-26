@@ -56,6 +56,7 @@ public enum MicroTargetType: String {
     case interface = "Interface"
     case sources = ""
     case unitTest = "Tests"
+    case testing = "Testing"
     case demo = "Demo"
 }
 
